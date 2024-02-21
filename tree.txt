@@ -1,0 +1,8 @@
+.
+├── cmd.txt
+├── go.mod
+├── go.sum
+├── main.go
+└── tree.txt
+
+0 directories, 5 files

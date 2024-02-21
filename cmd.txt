@@ -1,0 +1,11 @@
+docker pull postgres
+
+docker run --name pg-container -e POSTGRES_PASSWORD=keshav -p 5432:5432 -d postgres
+
+docker ps
+
+docker exec -ti pg-container createdb -U postgres gopgtest
+
+docker exec -ti pg-container psql -U postgres
+
+postgres=# \c gopgtest
